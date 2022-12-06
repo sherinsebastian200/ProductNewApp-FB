@@ -7,11 +7,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { ViewProductComponent } from './view-product/view-product.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 const myRoute:Routes=[
   {
     path:"",
     component:AddProductComponent
+  },
+  {
+    path:"view",
+    component:ViewProductComponent
+
   }
 ]
 
@@ -19,7 +25,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddProductComponent,
-    ViewProductComponent
+    ViewProductComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
