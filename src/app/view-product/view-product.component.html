@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Product code</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Manufacturing Date</th>
+                    <th scope="col">Expiry Date</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Seller Nmae</th>
+                    <th scope="col">Distributor Name</th>
+                  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of products" >
+                    <th>{{i.product_code}}</th>
+                    <td>{{i.product_name}}</td>
+                    <td>{{i.manu_date}}</td>
+                    <td>{{i.exp_date}}</td>
+                    <td>{{i.brand}}</td>
+                    <td>{{i.price}}</td>
+                    <td>{{i.seller_name}}</td>
+                    <td>{{i.distributor_name}}</td>
+                
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
